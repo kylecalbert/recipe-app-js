@@ -1,20 +1,23 @@
-import React from 'react'
-import './Recipe.css';
+import React from "react";
+import "./Recipe.css";
 
-
-function Recipe({title,image,calories,ingredients}) {
-    return (
-        <div className = "recipe">
+function Recipe({ title, image, calories, ingredients }) {
+  return (
+    <div className="recipe-card">
+      <div className="recipe-content">
+        <img src={image} alt=""></img>
         <h1>{title}</h1>
-         <ol>
-        {ingredients.map(ingredient => 
-            (<li>{ingredient.text}</li>
+        <div className="ingredients">
+          <h2>Ingredients</h2>
+          <ol>
+            {ingredients.map((ingredient) => (
+              <li>{ingredient.text}</li>
             ))}
           </ol>
-          <h1>{calories}</h1>
-          <img src = {image} alt=""></img>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
-export default Recipe
+export default Recipe;
