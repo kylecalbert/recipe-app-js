@@ -1,11 +1,16 @@
 .App {
   min-height: 100vh;
-  background-color: pink;
+}
+
+.App h1 {
+  display: flex;
+  justify-content: center;
+  border-top: #287ec7;
 }
 
 .search-form {
   min-height: 10vh;
-  background-color: blue;
+  background-color: #283747;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,5 +31,5 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background: green;
+  background: #f3f3f3;
 }
